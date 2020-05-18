@@ -48,7 +48,13 @@ class TestCalcAdd:
         assert 0==result
         print(result)
 
-
+    @allure.testcase('测试含有字符')
+    def test_add_containstring(self):
+        try:
+            result=Calc.add(self,'d','ewjqoe')
+        except:
+            result='输入的值不合法'
+        assert 'dewjqoe'==result
 
 class TestCalcDiv:
 
@@ -64,20 +70,27 @@ class TestCalcDiv:
         assert 4==result
 
     @allure.testcase('测试正数除以负数')
-    def test_positiveandnegative(self):
+    def test_div_positiveandnegative(self):
         result=Calc.div(self,5,-1)
         assert -5==result
 
     @allure.testcase('测试0除以其它数')
-    def test_zerodiv(self):
+    def test_div_zerodiv(self):
         result=Calc.div(self,0,-23)
         assert 0==result
 
     @allure.testcase('测试除以0')
-    def test_divzero(self):
+    def test_div_divzero(self):
         try:
             result=Calc.div(self,5,0)
         except:
             result='被除数不能为0'
         assert '被除数不能为0' == result
 
+    @allure.testcase('测试包含有字符类型')
+    def test_div_containstring(self):
+        try:
+            result=Calc.div(self,'qwe','asd')
+        except:
+            result ='输入值不合法'
+        assert '输入值不合法'==result
