@@ -1,0 +1,32 @@
+#一：yaml文件数据为键值对
+# yaml键值对：即python中字典
+#user1: my
+#age: 26
+## yaml键值对嵌套：即python中字典嵌套字典
+user2:
+     name: xiaoming
+     age: 15
+user3:
+     name: xiaohong
+age: 20
+#
+### yaml键值对中嵌套数组
+#user4:
+# - xiaowang
+# - 21
+#user5:
+# - xiaogang
+# - 18
+##
+##二：yaml文件数据为数组
+##yaml文件中内容为数组
+#- a
+#- b
+#- 5
+
+#yaml文件“数组”中嵌套“键值对”
+#- user1: aaa
+#- age: 16
+#  user2: bbb
+
+

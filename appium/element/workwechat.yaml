@@ -1,0 +1,17 @@
+消息页面：
+  通讯录: xpath:   //*[@resource-id='com.tencent.wework:id/drb'and@text='通讯录']
+
+
+
+通讯录页面：
+  添加成员: xpath: //*[@resource-id='com.tencent.wework:id/h1x']//*[@text='添加成员']
+
+
+
+
+  手动输入添加: xpath //*[@resource-id='com.tencent.wework:id/c7t']//*[@text='手动输入添加']
+
+
+
+
+  姓名: xpath //*[@resource-id='com.tencent.wework:id/au7'and@text='必填']
