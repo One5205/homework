@@ -14,9 +14,9 @@ from xml.etree.ElementTree import ElementTree
 
 from fabric.api import env, cd, run, local, get, put, settings, sudo, task, runs_once, execute
 
-env.user = 'rongyi'
-env.password = 'rongyi'
-env.sudo_password = 'rongyi'
+env.user = 'xxx'
+env.password = 'xxxx'
+env.sudo_password = 'xxxxxx'
 
 env.roledefs = {}
 
